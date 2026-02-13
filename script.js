@@ -134,7 +134,7 @@ function draw() {
             game = setInterval(draw, speed);
         }
 
-        if (score == 10) {
+        if (score == 5) {
             winSound.play();
             window.location.href = "final.html";
         }
