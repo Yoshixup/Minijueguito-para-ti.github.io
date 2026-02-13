@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Juega</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>🐍 Culebrita</h1>
+    <p>Ganas con 10 puntos</p>
+    <p>Puntos: <span id="score">0</span> | Récord: <span id="record">0</span></p>
+
+    <button id="pauseBtn">⏸️ Pausa</button>
+
+    <div class="game-container">
+        <canvas id="game" width="400" height="400"></canvas>
+
+        <div id="gameOver" class="game-over">
+            <h2>PERDISTE</h2>
+            <button onclick="restartGame()">Jugar de nuevo</button>
+        </div>
+    </div>
+
+    <!-- Sonidos -->
+    <audio id="eatSound" src="sounds/eat.wav"></audio>
+    <audio id="gameOverSound" src="sounds/gameover.wav"></audio>
+    <audio id="winSound" src="sounds/win.wav"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
